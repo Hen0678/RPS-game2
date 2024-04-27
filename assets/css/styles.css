@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: yellow;
+}
+
+h1 {
+    font-size: 3.5rem;
+    color: black;
+}
+
+h2 {
+    font-size: 2 rem;
+}
+
+#rock {
+    color: orange;
+    padding: 10px;
+}
+
+#plane {
+    color: blue;
+    padding: 10px;
+}
+
+#scissors {
+    color: silver;
+    padding: 10px;
+}
+
+.choices {
+    margin-bottom: 30px;
+    font-size: 12.5rem;
+    cursor: pointer;
+    max-width: 66%;
+    transition: background-color 0.5s ease-in;
+    border-bottom: 5px solid;
+    
+}
+
+.choices img {
+    font-size: 7.5rem;
+    max-width: 50%;
+    margin: 0 10px;
+    border-radius: 250px;
+    /* Changes cursor to finger pointer */
+    cursor: pointer;
+    text-align: center;
+    /*Fades out blue color of buttons */
+    transition: background-color 0.5s ease-in;
+         
+}
+    /* Changes button color to red */ 
+.choices button:hover {
+    background-color: red;
+}
+
+#playerDisplay, #computerDisplay {
+    font-size: 2rem;
+}    
+
+#resultDisplay {
+    font-size: 5rem;
+    margin: 30px ;
+}
+
+.scoreDisplay {
+    font-size: 2rem;
+
+}
+
+.greenText, #playerScoreDisplay {
+    color: green;
+}
+
+.redText, #computerScoreDisplay {
+    color: red;
+}
+
