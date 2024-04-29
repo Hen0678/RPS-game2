@@ -7,9 +7,11 @@ const resultDisplay = document.getElementById("resultDisplay");
 // target the html with a preset of 0
 const playerScoreDisplay = document.getElementById("playerScoreDisplay");
 const computerScoreDisplay = document.getElementById("computerScoreDisplay");
+const tieScoreDisplay = document.getElementById("tieScoreDisplay");
 // start of game both player and computer have 0
 let playerScore = 0;
 let computerScore = 0;
+let tieScore = 0;
 
 function playGame(playerChoice) {
 // Creates a randon number between 1-3 which correlates to rock, paper or scissors     
@@ -41,7 +43,7 @@ function playGame(playerChoice) {
     resultDisplay.textContent = result;
 
     // This will remove green and red text and display black text if tie
-    resultDisplay.classList.remove("greenText", "redText");
+    resultDisplay.classList.remove("greenText", "redText", "blueText");
 
     switch(result) {
         case "YOU WIN!":
@@ -53,12 +55,18 @@ function playGame(playerChoice) {
             break;
         case "YOU LOSE!":
             resultDisplay.classList.add("redText");
-             // Will add 1 to the player score
+             // Will add 1 to the computer score
             computerScore++;
             // Will display the computer score
             computerScoreDisplay.textContent = computerScore;
             break;
-            
+        case "IT'S A TIE":
+            resultDisplay.classList.add("blueText");
+                // Will add 1 to the computer score
+            tieScore++;
+            // Will display the computer score
+            tieScoreDisplay.textContent = tieScore;
+            break;  
     }
 
 }

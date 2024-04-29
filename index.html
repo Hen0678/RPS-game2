@@ -16,12 +16,13 @@
 
     <h1>Rock, Paper, Scissors</h1>
     <h2>Make your selection</h2>
+    <p><em>Rules: Rock blunts Scissors / Paper covers Rock / Scissors cuts Paper</em></p>
     <!-- RPS buttons-->
     <div class="choices">
         <i id="rock" class="fa-solid fa-hill-rockslide" onclick="playGame('Rock')"></i>
         <i id="plane" class="fa-regular fa-paper-plane" onclick="playGame('Paper')"></i>
         <i id="scissors" class="fa-solid fa-scissors" onclick="playGame('Scissors')"></i>
-
+        
      <!--    
         <img src="assets/images/rock_image.png" alt="Rock" onclick="playGame('rock')">
         <img src="assets/images/paper_image.png" alt="Paper" onclick="playGame('paper')">
@@ -30,7 +31,7 @@
     </div>
     <h2>Result</h2>
     <!-- Display area-->
-    <div id="playerDisplay">Player:</div>
+    <div id="playerDisplay">Player: </div>
     <div id="computerDisplay">Computer:</div>
     <div id="resultDisplay"></div>
 
@@ -42,6 +43,10 @@
 
     <div class="scoreDisplay">Computer Score:
         <span id="computerScoreDisplay">0</span>
+    </div>
+
+    <div class="scoreDisplay">Tie Score:
+        <span id="tieScoreDisplay">0</span>
     </div>
 
     <script src="assets/js/index.js"></script>
