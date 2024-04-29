@@ -1,6 +1,6 @@
 // ROCK PAPER SCISSORS
 
-const choices = ["Rock", "Paper", "Scissors"];
+const choices = ["Rock", "Paper", "Scissors", "Lizard", "Spock"];
 const playerDisplay = document.getElementById("playerDisplay");
 const computerDisplay = document.getElementById("computerDisplay");
 const resultDisplay = document.getElementById("resultDisplay");
@@ -15,7 +15,7 @@ let tieScore = 0;
 
 function playGame(playerChoice) {
 // Creates a randon number between 1-3 which correlates to rock, paper or scissors     
-    const computerChoice = choices[Math.floor(Math.random() * 3)];
+    const computerChoice = choices[Math.floor(Math.random() * 5)];
     let result = "";
 
     if(playerChoice === computerChoice) {
@@ -25,15 +25,24 @@ function playGame(playerChoice) {
         // switch cane be used instead of multiple if statements
         switch(playerChoice) {
             case "Rock":
-                result = (computerChoice === "Scissors") ? "YOU WIN!" : "YOU LOSE!"
+                result = (computerChoice == "Scissors" || computerChoice == "Lizard") ? "YOU WIN!" : "YOU LOSE!"
                 // break terminates the loop
                 break;
+  
+
             case "Paper":
-                result = (computerChoice === "Rock") ? "YOU WIN!" : "YOU LOSE!"
+                result = (computerChoice === "Rock" || computerChoice == "Spock") ? "YOU WIN!" : "YOU LOSE!"
                 break;
             case "Scissors":
-                result = (computerChoice === "Paper") ? "YOU WIN!" : "YOU LOSE!"
-                break;              
+                result = (computerChoice == "Paper" || computerChoice == "Lizard") ? "YOU WIN!" : "YOU LOSE!"
+                break;    
+            case "Lizard":
+                result = (computerChoice == "Paper" || computerChoice == "Spock" ) ? "YOU WIN!" : "YOU LOSE!"
+                break; 
+            case "Spock":
+                result = (computerChoice == "Scissors" || computerChoice == "Rock") ? "YOU WIN!" : "YOU LOSE!"
+                break; 
+                          
 
         }
     }
