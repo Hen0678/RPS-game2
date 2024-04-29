@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon icons of RPS icon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+        
+</head>
+<body>
+
+    <h1>Rock, Paper, Scissors, Lizard, Spock</h1>
+    <h2>Make your selection</h2>
+    <p><em>Rules: Rock blunts Scissors / Paper covers Rock / Scissors cuts Paper</em></p>
+    <!-- RPS buttons-->
+    <div class="choices">
+        <i id="rock" class="fa-solid fa-hill-rockslide" onclick="playGame('Rock')"></i>
+        <i id="plane" class="fa-regular fa-paper-plane" onclick="playGame('Paper')"></i>
+        <i id="scissors" class="fa-solid fa-scissors" onclick="playGame('Scissors')"></i>
+        <i id="lizard" class="fa-solid fa-dragon" onclick="playGame('Lizard')"></i>
+        <i id="spock" class="fa-solid fa-hand-spock" onclick="playGame('Spock')"></i>
+        
+     <!--    
+        <img src="assets/images/rock_image.png" alt="Rock" onclick="playGame('rock')">
+        <img src="assets/images/paper_image.png" alt="Paper" onclick="playGame('paper')">
+        <img src="assets/images/scissors_image.png" alt="scissors" onclick="playGame('scissors')">
+          -->     
+    </div>
+    <h2>Result</h2>
+    <!-- Display area-->
+    <div id="playerDisplay">Player: </div>
+    <div id="computerDisplay">Computer:</div>
+    <div id="resultDisplay"></div>
+
+    <h2>Score</h2>
+
+    <div class="scoreDisplay">Player Score:
+        <span id="playerScoreDisplay">0</span>
+    </div>
+
+    <div class="scoreDisplay">Computer Score:
+        <span id="computerScoreDisplay">0</span>
+    </div>
+
+    <div class="scoreDisplay">Tie Score:
+        <span id="tieScoreDisplay">0</span>
+    </div>
+
+    <script src="assets/js/index.js"></script>
+    <script src="https://kit.fontawesome.com/3a6357e737.js" crossorigin="anonymous"></script>
+</body>
+</html>

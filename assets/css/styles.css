@@ -5,7 +5,25 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(to right, #dde4e7, #72686a);
+    background: linear-gradient(to right, #dde4e7, #72686a); 
+    background-image: url("assets/images/5073414.jpg");
+}
+
+.button {
+    background-color: aqua;
+    width: 400px;
+    height: 200px;
+    font-size: 50px;
+    /*
+    display: flex;
+    flex-direction: row; 
+    text-align: center;  */
+    margin-bottom: 10%; 
+    margin-top: 20%;
+    display: block;
+    border-radius: 25%;
+    
+    
 }
 
 h1 {
