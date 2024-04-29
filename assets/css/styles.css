@@ -1,16 +1,36 @@
-body {
+#home {
     font-family: Arial, sans-serif;
     font-weight: bold;
     margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(to right, #dde4e7, #72686a); 
-    background-image: url("assets/images/5073414.jpg");
+    /*background: linear-gradient(to right, #dde4e7, #72686a); */
+    background-image: url("/assets/images/5073414.jpg"); 
 }
 
+#game {
+    background-color: red;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#instructions {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+
+
 .button {
-    background-color: aqua;
+    background-color: black;
+    color: green;
     width: 400px;
     height: 200px;
     font-size: 50px;
@@ -28,7 +48,7 @@ body {
 
 h1 {
     font-size: 3.5rem;
-    color: black;
+    color: white;
 }
 
 h2 {
