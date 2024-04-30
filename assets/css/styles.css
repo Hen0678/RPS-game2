@@ -1,7 +1,12 @@
-#home {
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap');
+/* Font is "Sedgwick Ave */
+
+
+body {
     font-family: Arial, sans-serif;
+    color: pink;
     font-weight: bold;
-    margin: 0;
+    margin: 0x;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,6 +14,7 @@
     background-image: url("/assets/images/5073414.jpg"); 
 }
 
+/*
 #game {
     background-color: red;
     font-family: Arial, sans-serif;
@@ -18,7 +24,7 @@
     flex-direction: column;
     align-items: center;
 }
-
+*/
 #instructions {
     display: block;
     margin-left: auto;
@@ -30,7 +36,7 @@
 
 .button {
     background-color: black;
-    color: green;
+    color: pink;
     width: 400px;
     height: 200px;
     font-size: 50px;
@@ -38,6 +44,8 @@
     display: flex;
     flex-direction: row; 
     text-align: center;  */
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 10%; 
     margin-top: 20%;
     display: block;
@@ -48,11 +56,13 @@
 
 h1 {
     font-size: 3.5rem;
-    color: white;
+    color: pink;
+    font-family: "Sedgwick Ave", sans-serif;
 }
 
 h2 {
-    font-size: 2 rem;
+    font-size: 2.5rem;
+    font-family: "Sedgwick Ave", sans-serif;
 }
 
 #rock {
