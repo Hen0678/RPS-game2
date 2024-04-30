@@ -14,7 +14,7 @@ let computerScore = 0;
 let tieScore = 0;
 
 function playGame(playerChoice) {
-// Creates a randon number between 1-3 which correlates to rock, paper or scissors     
+// Creates a randon computer choice between 1-5 which correlates to rock, paper, scissors, Lizard or Spock    
     const computerChoice = choices[Math.floor(Math.random() * 5)];
     let result = "";
 
@@ -51,8 +51,8 @@ function playGame(playerChoice) {
     computerDisplay.textContent = `Computer: ${computerChoice}`;
     resultDisplay.textContent = result;
 
-    // This will remove green and red text and display black text if tie
-    resultDisplay.classList.remove("greenText", "redText", "blueText");
+    // This will remove green and red text and display white text if tie
+    resultDisplay.classList.remove("greenText", "redText");
 
     switch(result) {
         case "YOU WIN!":
