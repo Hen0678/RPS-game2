@@ -38,26 +38,25 @@ body {
   }
 
 
-
+/*
 .button {
     background-color: black;
     color: pink;
     width: 400px;
     height: 200px;
     font-size: 50px;
-    /*
+    
     display: flex;
     flex-direction: row; 
-    text-align: center;  */
+    text-align: center;  
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10%; 
     margin-top: 20%;
     display: block;
     border-radius: 25%;
-    
-    
-}
+        
+} */
 
 h1 {
     font-size: 3.5rem;
@@ -133,11 +132,11 @@ h2 {
    transition: background-color 0.5s ease-in;
          
 }
-    /* Changes button color to red */ 
+    /* Changes button color to red 
 .choices button:hover {
     background-color: red;
 }
-
+*/
 #playerDisplay, #computerDisplay {
     font-size: 2rem;
     background-color: black;
