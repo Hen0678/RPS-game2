@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap');
 /* Font is "Sedgwick Ave */
 
-
 body {
     font-family: Arial, sans-serif;
     color: pink;
@@ -36,7 +35,6 @@ body {
     margin-right: auto;
     width: 100%;
   }
-
 
 /*
 .button {
@@ -163,6 +161,6 @@ h2 {
     color: red;
 }
 
-.blueText, #tieScoreDisplay {
+.whiteText, #tieScoreDisplay {
     color: white;
 }

@@ -28,8 +28,6 @@ function playGame(playerChoice) {
                 result = (computerChoice == "Scissors" || computerChoice == "Lizard") ? "YOU WIN!" : "YOU LOSE!"
                 // break terminates the loop
                 break;
-  
-
             case "Paper":
                 result = (computerChoice === "Rock" || computerChoice == "Spock") ? "YOU WIN!" : "YOU LOSE!"
                 break;
@@ -42,8 +40,7 @@ function playGame(playerChoice) {
             case "Spock":
                 result = (computerChoice == "Scissors" || computerChoice == "Rock") ? "YOU WIN!" : "YOU LOSE!"
                 break; 
-                          
-
+                       
         }
     }
     
@@ -51,8 +48,8 @@ function playGame(playerChoice) {
     computerDisplay.textContent = `Computer: ${computerChoice}`;
     resultDisplay.textContent = result;
 
-    // This will remove green and red text and display white text if tie
-    resultDisplay.classList.remove("greenText", "redText");
+    // Removes the green, red or white text when a new guess is selected
+    resultDisplay.classList.remove("greenText", "redText", "whiteText");
 
     switch(result) {
         case "YOU WIN!":
@@ -70,12 +67,11 @@ function playGame(playerChoice) {
             computerScoreDisplay.textContent = computerScore;
             break;
         case "IT'S A TIE":
-            resultDisplay.classList.add("blueText");
-                // Will add 1 to the computer score
+            resultDisplay.classList.add("whiteText");
+                // Will add 1 to the tie score
             tieScore++;
-            // Will display the computer score
+            // Will display the tie score
             tieScoreDisplay.textContent = tieScore;
             break;  
     }
-
 }
