@@ -135,7 +135,7 @@ h2 {
     background-color: red;
 }
 */
-#playerDisplay, #computerDisplay {
+#playerResult, #computerResult {
     font-size: 2rem;
     background-color: black;
 }    
@@ -146,15 +146,38 @@ h2 {
    
 }
 
-.scoreDisplay {
+/*
+#test {
+    background-color: black;
+    border-style: solid;
+    border-color: white;
+}
+*/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: white;
+    padding: 5px;
+  }
+  .grid-item {
+    background-color: black;
+    border: 1px solid white;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+/*
+.scoreBoard {
     font-size: 2rem;
     max-width: 66%;
     background-color: black;
 
-}
+} */
 
 .greenText, #playerScoreDisplay {
     color: green;
+    align-items: end;
 }
 
 .redText, #computerScoreDisplay {

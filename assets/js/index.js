@@ -1,13 +1,13 @@
 // ROCK PAPER SCISSORS
 
 const choices = ["Rock", "Paper", "Scissors", "Lizard", "Spock"];
-const playerDisplay = document.getElementById("playerDisplay");
-const computerDisplay = document.getElementById("computerDisplay");
+const playerResult = document.getElementById("playerResult");
+const computerResult = document.getElementById("computerResult");
 const resultDisplay = document.getElementById("resultDisplay");
 // target the html with a preset of 0
-const playerScoreDisplay = document.getElementById("playerScoreDisplay");
-const computerScoreDisplay = document.getElementById("computerScoreDisplay");
-const tieScoreDisplay = document.getElementById("tieScoreDisplay");
+const currentPlayerScore = document.getElementById("currentPlayerScore");
+const currentComputerScore = document.getElementById("currentComputerScore");
+const currentTieScore = document.getElementById("currentTieScore");
 // start of game both player and computer have 0
 let playerScore = 0;
 let computerScore = 0;
@@ -44,8 +44,8 @@ function playGame(playerChoice) {
         }
     }
     
-    playerDisplay.textContent = `Player: ${playerChoice}`;
-    computerDisplay.textContent = `Computer: ${computerChoice}`;
+    playerResult.textContent = `Player: ${playerChoice}`;
+    computerResult.textContent = `Computer: ${computerChoice}`;
     resultDisplay.textContent = result;
 
     // Removes the green, red or white text when a new guess is selected

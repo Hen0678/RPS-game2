@@ -17,39 +17,56 @@
     <h1>Rock, Paper, Scissors, Lizard, Spock</h1>
     <h2>Make your selection!</h2>
     
-    <!-- RPS buttons-->
-    <div class="choices">
+    <!-- R,P,S,L,S buttons-->
+    <div>
         <i id="rock" class="fa-solid fa-hand-back-fist" onclick="playGame('Rock')"></i>
         <i id="plane"class="fa-solid fa-hand" onclick="playGame('Paper')"></i>
         <i id="scissors" class="fa-solid fa-hand-scissors" onclick="playGame('Scissors')"></i>
         <i id="lizard" class="fa-solid fa-hand-lizard" onclick="playGame('Lizard')"></i>
         <i id="spock" class="fa-solid fa-hand-spock" onclick="playGame('Spock')"></i>
-        
-     <!--    
+        <!--    
         <img src="assets/images/rock_image.png" alt="Rock" onclick="playGame('rock')">
         <img src="assets/images/paper_image.png" alt="Paper" onclick="playGame('paper')">
         <img src="assets/images/scissors_image.png" alt="scissors" onclick="playGame('scissors')">
           -->     
     </div>
+   
     <h2>Result</h2>
     <!-- Display area-->
-    <div id="playerDisplay">Player: </div>
-    <div id="computerDisplay">Computer:</div>
+    <div id="playerResult">Player:</div>
+    <div id="computerResult">Computer:</div>
     <div id="resultDisplay"></div>
 
     <h2>Score</h2>
 
-    <div class="scoreDisplay">Player Score:
-        <span id="playerScoreDisplay">0</span>
-    </div>
+    <div class="grid-container"> 
+        <div class="grid-item">Player Score:</div>
+        <div class="grid-item">
+            <span id="playerScoreDisplay">0</span>
+        </div>
+        <div class="grid-item">Computer Score:</div>
+        <div class="grid-item">
+            <span id="computerScoreDisplay">0</span>
+        </div>
+        <div class="grid-item">Tie Score:</div>
+        <div class="grid-item">
+            <span id="tieScoreDisplay">0</span>
+        </div>
 
-    <div class="scoreDisplay">Computer Score:
-        <span id="computerScoreDisplay">0</span>
     </div>
+        <!--
+        <div class="scoreBoard">Player Score:
+        <span id="currentPlayerScore">0</span>
+        </div>
 
-    <div class="scoreDisplay">Tie Score:
-        <span id="tieScoreDisplay">0</span>
-    </div>
+        <div class="scoreBoard">Computer Score:
+        <span id="currentComputerScore">0</span>
+        </div>
+
+        <div class="scoreBoard">Tie Score:
+        <span id="currentTieScore">0</span>
+        </div>
+       -->
 
     <script src="assets/js/index.js"></script>
     <script src="https://kit.fontawesome.com/3a6357e737.js" crossorigin="anonymous"></script>
