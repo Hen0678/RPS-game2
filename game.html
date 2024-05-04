@@ -15,15 +15,15 @@
 <body>
 
     <h1>Rock, Paper, Scissors, Lizard, Spock</h1>
-    <h2>Make your selection!</h2>
+    <h2>Make your choice!</h2>
     
     <!-- R,P,S,L,S buttons-->
     <div>
-        <i id="rock" class="fa-solid fa-hand-back-fist" onclick="playGame('Rock')"></i>
-        <i id="plane"class="fa-solid fa-hand" onclick="playGame('Paper')"></i>
-        <i id="scissors" class="fa-solid fa-hand-scissors" onclick="playGame('Scissors')"></i>
-        <i id="lizard" class="fa-solid fa-hand-lizard" onclick="playGame('Lizard')"></i>
-        <i id="spock" class="fa-solid fa-hand-spock" onclick="playGame('Spock')"></i>
+        <i id="rock" class="fa-solid fa-hand-back-fist" onclick="selectChoice('Rock')"></i>
+        <i id="plane"class="fa-solid fa-hand" onclick="selectChoice('Paper')"></i>
+        <i id="scissors" class="fa-solid fa-hand-scissors" onclick="selectChoice('Scissors')"></i>
+        <i id="lizard" class="fa-solid fa-hand-lizard" onclick="selectChoice('Lizard')"></i>
+        <i id="spock" class="fa-solid fa-hand-spock" onclick="selectChoice('Spock')"></i>
         <!--    
         <img src="assets/images/rock_image.png" alt="Rock" onclick="playGame('rock')">
         <img src="assets/images/paper_image.png" alt="Paper" onclick="playGame('paper')">
@@ -35,22 +35,22 @@
     <!-- Display area-->
     <div id="playerResult">Player:</div>
     <div id="computerResult">Computer:</div>
-    <div id="resultDisplay"></div>
+    <div id="finalResult"></div>
 
     <h2>Score</h2>
 
     <div class="grid-container"> 
         <div class="grid-item">Player Score:</div>
         <div class="grid-item">
-            <span id="playerScoreDisplay">0</span>
+            <span id="overallPlayerTotal">0</span>
         </div>
         <div class="grid-item">Computer Score:</div>
         <div class="grid-item">
-            <span id="computerScoreDisplay">0</span>
+            <span id="overallComputerTotal">0</span>
         </div>
         <div class="grid-item">Tie Score:</div>
         <div class="grid-item">
-            <span id="tieScoreDisplay">0</span>
+            <span id="overallTieTotal">0</span>
         </div>
 
     </div>
@@ -69,6 +69,6 @@
        -->
 
     <script src="assets/js/index.js"></script>
-    <script src="https://kit.fontawesome.com/3a6357e737.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/3a6357e737.js" crossorigin="anonymous"></script> 
 </body>
 </html>

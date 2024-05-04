@@ -3,7 +3,7 @@
 const choices = ["Rock", "Paper", "Scissors", "Lizard", "Spock"];
 const playerResult = document.getElementById("playerResult");
 const computerResult = document.getElementById("computerResult");
-const resultDisplay = document.getElementById("resultDisplay");
+const finalResult = document.getElementById("finalResult");
 // target the html with a preset of 0
 const currentPlayerScore = document.getElementById("currentPlayerScore");
 const currentComputerScore = document.getElementById("currentComputerScore");
@@ -13,7 +13,7 @@ let playerScore = 0;
 let computerScore = 0;
 let tieScore = 0;
 
-function playGame(playerChoice) {
+function selectChoice(playerChoice) {
 // Creates a randon computer choice between 1-5 which correlates to rock, paper, scissors, Lizard or Spock    
     const computerChoice = choices[Math.floor(Math.random() * 5)];
     let result = "";
@@ -46,32 +46,32 @@ function playGame(playerChoice) {
     
     playerResult.textContent = `Player: ${playerChoice}`;
     computerResult.textContent = `Computer: ${computerChoice}`;
-    resultDisplay.textContent = result;
+    finalResult.textContent = result;
 
     // Removes the green, red or white text when a new guess is selected
-    resultDisplay.classList.remove("greenText", "redText", "whiteText");
+    finalResult.classList.remove("greenText", "redText", "whiteText");
 
     switch(result) {
         case "YOU WIN!":
-            resultDisplay.classList.add("greenText");
+            finalResult.classList.add("greenText");
             // Will add 1 to the player score
             playerScore++;
              // Will display the player score
-            playerScoreDisplay.textContent = playerScore;
+            overallPlayerTotal.textContent = playerScore;
             break;
         case "YOU LOSE!":
-            resultDisplay.classList.add("redText");
+            finalResult.classList.add("redText");
              // Will add 1 to the computer score
             computerScore++;
             // Will display the computer score
-            computerScoreDisplay.textContent = computerScore;
+            overallComputerTotal.textContent = computerScore;
             break;
         case "IT'S A TIE":
-            resultDisplay.classList.add("whiteText");
+            finalResult.classList.add("whiteText");
                 // Will add 1 to the tie score
             tieScore++;
             // Will display the tie score
-            tieScoreDisplay.textContent = tieScore;
+            overallTieTotal.textContent = tieScore;
             break;  
     }
 }

@@ -140,7 +140,7 @@ h2 {
     background-color: black;
 }    
 
-#resultDisplay {
+#finalResult {
     font-size: 5rem;
     margin: 30px;
    
@@ -175,15 +175,15 @@ h2 {
 
 } */
 
-.greenText, #playerScoreDisplay {
+.greenText, #overallPlayerTotal {
     color: green;
-    align-items: end;
+    /* align-items: end; */
 }
 
-.redText, #computerScoreDisplay {
+.redText, #overallComputerTotal {
     color: red;
 }
 
-.whiteText, #tieScoreDisplay {
+.whiteText, #overallTieTotal {
     color: white;
 }
